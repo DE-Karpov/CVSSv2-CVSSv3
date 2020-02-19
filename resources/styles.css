@@ -1,0 +1,63 @@
+body {
+    background-color: #c2d7f9;
+    font-family: 'Courier New'
+}
+
+.selectBox {
+    background-color: #fbee7a;
+    width: 50%;
+    border: 1px solid;
+    border-radius: 8px;
+    font-family: 'Courier New';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    background-color: #fff7b3;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.header {
+    height: 100px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.score {
+    font-weight: normal;
+}
+
+.table {
+    width: 50%;
+    height: 50%;
+}
+
+.tableCell {
+    border: 1px solid;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    background-color: #b3fff3;
+}
+
+.row {
+    display: flex;
+}
+
+.block {
+    display: block;
+}

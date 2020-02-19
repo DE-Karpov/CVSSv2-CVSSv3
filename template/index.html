@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Калькулятор CVSSv2 и CVSSv3</title>
+    <link rel="stylesheet" type="text/css" href="../resources/styles.css">
+    <script type="text/javascript" src="../resources/CVSSv2.js"></script>
+    <script type="text/javascript" src="../resources/CVSSv3.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="block">
+            <div class="header">
+                CVSSv2
+            </div>
+            <table class="table" align="center">
+                <tr>
+                    <td class="tableCell">
+                        <p>Вектор <br> доступа</p>
+                        <select id="select1" class="selectBox" name="">
+                        <option value="L">L</option>
+                        <option value="A">A</option>
+                        <option value="N">N</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Сложность <br> доступа</p>
+                        <select id="select2" class="selectBox" name="">
+                        <option value="H">H</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Метрика «аутентификация» </p>
+                        <select id="select3" class="selectBox" name="">
+                        <option value="M">M</option>
+                        <option value="S">S</option>
+                        <option value="N">N</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tableCell">
+                        <p> Метрика «воздействие на конфиденциальность» </p>
+                        <select id="select4" class="selectBox" name="">
+                        <option value="N">N</option>
+                        <option value="P">P</option>
+                        <option value="C">C</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Метрика «воздействие на целостность» </p>
+                        <select id="select5" class="selectBox" name="">
+                        <option value="N">N</option>
+                        <option value="P">P</option>
+                        <option value="C">C</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Метрика «воздействие на доступность» </p>
+                        <select id="select6" class="selectBox" name="">
+                        <option value="N">N</option>
+                        <option value="P">P</option>
+                        <option value="C">C</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <div class="buttonBox">
+                    <button onclick="countCVSSv2()" class="button" type="button" name="button">Подсчитать</button>
+                </div>
+                <div class="buttonBox">
+                    <h1 class="score" id="CVSSv2Score"> ... </h1>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="header">
+                CVSSv3
+            </div>
+            <table class="table" align="center">
+                <tr>
+                    <td class="tableCell">
+                        <p>Вектор <br> атаки</p>
+                        <select id="select7" class="selectBox" name="">
+                            <option value="N">N</option>
+                            <option value="A">A</option>
+                            <option value="L">L</option>
+                            <option value="L">P</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Сложность <br> атаки</p>
+                        <select id="select8" class="selectBox" name="">
+                        <option value="H">H</option>
+                        <option value="L">L</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Уровень привелегий </p>
+                        <select id="select9" class="selectBox" name="">
+                        <option value="H">H</option>
+                        <option value="L">L</option>
+                        <option value="N">N</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p> Взаимодействие с пользователем </p>
+                        <select id="select10" class="selectBox" name="">
+                        <option value="R">R</option>
+                        <option value="N">N</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tableCell">
+                        <p>Влияние на другие компоненты</p>
+                        <select id="select11" class="selectBox" name="">
+                        <option value="U">U</option>
+                        <option value="C">C</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Влияние на конфиденциальность </p>
+                        <select id="select12" class="selectBox" name="">
+                        <option value="N">N</option>
+                        <option value="L">L</option>
+                        <option value="H">H</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Влияние на целостность </p>
+                        <select id="select13" class="selectBox" name="">
+                        <option value="N">N</option>
+                        <option value="L">L</option>
+                        <option value="H">H</option>
+                    </select>
+                    </td>
+                    <td class="tableCell">
+                        <p>Влияние на доступность </p>
+                        <select id="select14" class="selectBox" name="">
+                        <option value="N">N</option>
+                        <option value="L">L</option>
+                        <option value="H">H</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <div class="buttonBox">
+                    <button onclick="countCVSSv3()" class="button" type="button" name="button">Подсчитать</button>
+                </div>
+                <div class="buttonBox">
+                    <h1 class="score" id="CVSSv3Score"> ... </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
